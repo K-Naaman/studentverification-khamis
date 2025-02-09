@@ -365,9 +365,17 @@
         }
       </style>
     </div>
-   
+    
+      <!-- certificate div  -->
+     <div class="container>
+
+     
       <div class="certificates">
-        <section id="certificates" class="mt-5" style="display: flex; align-items: center; gap: 20px;">
+
+      <div class="table-responsive">
+  <table class="table table-bordered">
+    <!-- Table content -->
+     <section id="certificates" class="mt-5" style="display: flex; align-items: center; gap: 20px;">
           <p style="flex: 1;">This certifies that <b> Mr. Khamis Naaman Khamisi </b> has successfully completed and received the following certificates from ASTG </p>
           <img src="astg-khamis_photo-nobg.png" alt="Mr. Khamis Naaman Khamisi" width="200" height="250" style="border-radius: 8px;">
         </section>
@@ -429,16 +437,15 @@
               </td>
             </tr>
             <tr>
-                <td>6</td>
-                <td>FIRE PREVENTION AND FIRE FIGHTING</td>
-                <td>DECEMBER 2023</td>
-                <td>4th DECEMBER 2028</td>
-                <td>
-                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="FIRE PREVENTION AND FIRE FIGHTING-khamis.jpg">View</button>
-                </td>
-              </tr>
-            <tr>
-              <td>7</td>
+              <td>6</td>
+              <td>FIRE PREVENTION AND FIRE FIGHTING</td>
+              <td>DECEMBER 2023</td>
+              <td>4th DECEMBER 2028</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="FIRE PREVENTION AND FIRE FIGHTING-khamis.jpg">View</button>
+              </td>
+            </tr>
+            <td>7</td>
               <td>HYDROGEN SULPHIDE SAFETY(H2S)</td>
               <td>DECEMBER 2023</td>
               <td>NO EXPIRY</td>
@@ -494,6 +501,11 @@
             <!-- Add similar rows for other certificates -->
           </tbody>
         </table>
+      </div> 
+    
+  </table>
+</div>
+
         <!-- Add a button for downloading all certificates -->
         <div class="text-center mt-4">
           <button id="downloadButton" class="btn btn-success">Download All Certificates</button>
@@ -506,7 +518,7 @@
     const files = [
         'certificates-package1.zip',
         'certificates-package2.zip'
-        ];
+            ];
     document.getElementById('loadingText').style.display = 'inline';
 
     files.forEach((file, index) => {
